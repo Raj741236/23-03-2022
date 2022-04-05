@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Different types of selectors</title>
+    <style>
+     .para{
+         background-color: cadetblue;
+         font-size: 30px;
+     }
+     .Externaldiv h1{
+         background-color: orange;
+     }
+    </style>
+        <link rel="stylesheet" href="../CSS/pseudo_selectors.css">
+
+</head>
+<body>
+    <!-- 
+      - Types of CSS
+      1. Inline css
+      2. Internal Css
+      3. External CSS
+
+
+     -->
+
+     <!--Inline css-->
+     <h1 style="border: 1px solid green;color: aqua;">I am Inline CSS</h1>
+
+     <!--Internal css-->
+    <p class="para"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, vero consequatur. Laboriosam tenetur necessitatibus cupiditate itaque voluptatum aspernatur vitae numquam impedit nam repellendus perspiciatis aliquam accusamus et, rem distinctio commodi.</p>
+
+    <!--External CSS-->
+    <div class="Externaldiv">
+        <h1>I am External CSS</h1>
+    </div>
+
+    <!--
+      -Pseudo Selectors
+      1. pseudo class selector(selector : state of an element)
+        -first-child
+        -last-child
+        -nth-child(index)
+        -nth-child(even/2n)
+        -nth-child(odd/2n+1)
+
+        Anchor tag 
+       -a:link
+       -a:visited
+       -a:hover
+       -a:active
+
+
+      2. pseudo element selector(selector :: state of an element)
+
+    -->
+   
+    <ul id="listid">
+        <li>I am first child</li>
+        <li>I am second child</li>
+        <li>I am third child</li>
+        <li>I am fourth child</li>
+        <li>I am fifth child</li>
+        <li>I am sixth child</li>
+        <li>I am seventh child</li>
+        <li>I am eighth child</li>
+    </ul>
+
+    <a href="#" >Myntra</a>
+
+</body>
+</html>
