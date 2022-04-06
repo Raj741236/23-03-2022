@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+         #heading-id{
+            color: orange;
+        }
+        *{
+            margin-left: 50px;
+        }
+        .heading2{
+            color: blueviolet;
+            font-size: 50px;
+        }
+
+        .heading1{
+            color: green;
+        }
+
+       
+        
+    </style>
+</head>
+<body>
+    <!--
+      Specificity: When two or more styles are applied to the same element then the browser according to the specificity it decides which style it has to apply to particular element
+
+      specificity hierarchy
+
+      1. Inline
+
+      2.id
+
+      3. class,pseudo-class,attribute
+
+      4. tag, pseudo-elements
+
+      5. Universal Selector
+
+    -->
+
+
+    <span id="heading-id" class="heading1 heading2" style="color: red;">I am a heading tag</span>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, quis non totam, dolore est, illum eveniet debitis sequi qui facilis dicta saepe perferendis quisquam voluptates eius magnam libero ducimus sapiente voluptate! Aut consectetur nemo tenetur. Molestiae reprehenderit doloremque obcaecati natus? Minus fugiat expedita libero dolorum iure, quos sit atque harum.</p>
+</body>
+</html>
