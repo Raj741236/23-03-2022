@@ -6,19 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Specificity</title>
     <style>
-         #heading-id{
-            color: orange;
-        }
+        /* 0,0,0,0,1*/
         *{
             margin-left: 50px;
+            color: blue!important;
         }
+        
+        /* 0,0,1,0,0 */
         .heading2{
             color: blueviolet;
             font-size: 50px;
         }
-
+      /* 0,0,0,1,0 */
+        h1{
+            color: brown;
+        }
+        /* 0,0,1,0,0 */
         .heading1{
             color: green;
+        }
+
+        /* 0,1,0,0,0 */
+
+        #heading-id{
+            color: orange;
         }
 
        
@@ -30,7 +41,8 @@
       Specificity: When two or more styles are applied to the same element then the browser according to the specificity it decides which style it has to apply to particular element
 
       specificity hierarchy
-
+      1,0,0,0,0,0
+       - important
       1. Inline
 
       2.id
@@ -43,8 +55,8 @@
 
     -->
 
-
-    <span id="heading-id" class="heading1 heading2" style="color: red;">I am a heading tag</span>
+     <!--1,0,0,0,0-->
+    <h1 id="heading-id" class="heading1 heading2" style="color: red;">I am a heading tag</h1>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, quis non totam, dolore est, illum eveniet debitis sequi qui facilis dicta saepe perferendis quisquam voluptates eius magnam libero ducimus sapiente voluptate! Aut consectetur nemo tenetur. Molestiae reprehenderit doloremque obcaecati natus? Minus fugiat expedita libero dolorum iure, quos sit atque harum.</p>
 </body>
 </html>
