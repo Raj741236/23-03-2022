@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions in css</title>
+    <style>
+        .parent{
+            padding: 50px;
+            background-color: cadetblue;
+            width: 500px;
+            height: 500px;
+            margin-left: 100px;
+        }
+        .child{
+            box-sizing: border-box;
+            padding: 30px;
+            background-color: crimson;
+            width: 200px;
+            height: 200px;
+            transition-duration: 1s;
+            transition-timing-function: ease;
+            
+        }
+        .child:hover{
+            transform: translate(200px);
+            background-color: cyan; 
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        Parent
+        <div class="child">
+            Child
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries and Transitions in css</title>
+    <style>
+        .parent{
+            background-color: aqua;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .child{
+            background-color: cadetblue;
+            padding: 50px;
+            margin: 20px;
+            flex: 12%;
+            text-align: center;
+        }
+
+        @media all and (min-width:768px) and (max-width:1024px){
+            .child{
+                flex:20%;
+                background-color: orange;
+                
+            }
+        }
+
+        @media all and (max-width:600px){
+            .child{
+                flex: 100%;
+                background-color: red;
+            }
+        } 
+
+        /* @media (orientation:landscape){
+            .child{
+                background-color: blue;
+            }
+        }
+
+        @media (orientation:portrait){
+            .child{
+                background-color: green;
+            }
+        } */
+
+
+
+    </style>
+</head>
+<body>
+    <!--
+      Media Queries
+      @media mediatype and value
+      1. print
+      2. screen
+      3. speech
+
+    -->
+    <div class="parent">
+        <div class="child">Card1</div>
+        <div class="child">Card2</div>
+        <div class="child">Card3</div>
+        <div class="child">Card4</div>
+        <div class="child">Card5</div>
+
+    </div>
+</body>
+</html>
